@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MemberDetails" representedClassName="MemberDetails" syncable="YES">
+        <attribute name="aboutUser" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phoneNum" optional="YES" attributeType="String"/>
+        <attribute name="userDOB" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="String"/>
+        <relationship name="toTask" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TaskDetails" inverseName="toMember" inverseEntity="TaskDetails"/>
+    </entity>
+    <entity name="TaskDetails" representedClassName="TaskDetails" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="endDate" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="String"/>
+        <attribute name="taskId" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="toMember" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MemberDetails" inverseName="toTask" inverseEntity="MemberDetails"/>
+    </entity>
+    <elements>
+        <element name="MemberDetails" positionX="-18" positionY="27" width="128" height="149"/>
+        <element name="TaskDetails" positionX="36" positionY="144" width="128" height="119"/>
+    </elements>
+</model>
