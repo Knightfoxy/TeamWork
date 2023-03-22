@@ -10,11 +10,10 @@ import Foundation
 class UserCellViewModel {
     
     let data : MemberInfo
-    init(item : MemberInfo){
+    init(item : MemberInfo) {
         self.data = item
     }
     func fetchCellData() -> MemberInfo {
         return data
     }
-    
 }

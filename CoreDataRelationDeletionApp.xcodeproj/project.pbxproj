@@ -193,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				84E92C8A28880A7F001E6F11 /* HomePageVC.swift */,
+				84D71F432889129600C88C19 /* Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,7 +384,6 @@
 			isa = PBXGroup;
 			children = (
 				84CF17D3288A819900322EC7 /* UIDatePicker.swift */,
-				84D71F432889129600C88C19 /* Extension.swift */,
 			);
 			path = "Datasource + Delegate";
 			sourceTree = "<group>";

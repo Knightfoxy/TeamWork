@@ -10,7 +10,7 @@ import Foundation
 struct CDMemberManager {
     
     private var _memberRepository = MemberDataRepository()
-    var member = [MemberDetails]()
+  //  var member = [MemberDetails]()
     
     func saveMember(data: MemberInfo) {
         _memberRepository.saveMemberData(data)
